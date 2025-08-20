@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Espainiako Baso Suteak",
+    "mapTitle": "Suteak Iberiar Penintsulan",
+    "loading": "Sute datuak kargatzen...",
+    "error": {
+      "title": "Datuak Kargatzean Errorea",
+      "retry": "Saiatu Berriro"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Data Aukeratu:",
+      "placeholder": "Data bat aukeratu"
+    },
+    "dateRange": {
+      "label": "Data tartea",
+      "placeholder": "Data tartea aukeratu"
+    },
+    "language": {
+      "label": "Hizkuntza:"
+    },
+    "zoom": {
+      "current": "Zoom Egungoa",
+      "resolution": "Hexagono Ebazpena"
+    }
+  },
+  "stats": {
+    "title": "Sute Estatistikak",
+    "date": "Data: {date}",
+    "fires": "Suteak {count}",
+    "totalArea": "Azalera Totala: {area} ha",
+    "burnt": "erre"
+  },
+  "legend": {
+    "title": "Hexagonoen Legenda",
+    "resolution": "Bereizmena",
+    "hexagonArea": "Hexagonoaren Azalera",
+    "lastCollection": "Azken Biltzea",
+    "currentSituation": "Uneko Egoera",
+    "noFire": "Sute Daturik Ez",
+    "smallFire": "Sute Txikia",
+    "mediumFire": "Sute Ertaina",
+    "largeFire": "Sute Handia",
+    "dataSource": "Datuak Copernicus/EFFIS/Europar Batasunetik",
+    "madeIn": "Mapa Madrilen eraikia"
+  },
+      "popup": {
+      "area": "Azalera: {area} ha",
+      "date": "Data: {date}",
+      "totalArea": "Azalera Totala: {area} ha",
+      "fireCount": "Sute Kopurua: {count}",
+      "fires": "Suteak"
+    },
+  "datePicker": {
+    "placeholder": "Data bat aukeratu",
+    "rangePlaceholder": "Data tartea aukeratu",
+    "predefinedRanges": "Aukeraketa Azkarra",
+    "ranges": {
+      "today": "Gaur",
+      "yesterday": "Atzo",
+      "lastWeek": "Azken Astea",
+      "lastMonth": "Azken Hilabetea",
+      "lastQuarter": "Azken Hiruhilekoa"
+    },
+    "reset": "Berrezarri"
+  },
+  "languages": {
+    "ca": "Katalana",
+    "en": "Ingelesa",
+    "es": "Gaztelania",
+    "eu": "Euskara",
+    "gl": "Galiziera",
+    "pt": "Portugesa"
+  }
+}

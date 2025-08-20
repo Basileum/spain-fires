@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Incendios Forestais de España",
+    "mapTitle": "Incendios na Península Ibérica",
+    "loading": "Cargando datos de incendios...",
+    "error": {
+      "title": "Erro ao Cargar Datos",
+      "retry": "Reintentar"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Seleccionar Data:",
+      "placeholder": "Selecciona unha data"
+    },
+    "dateRange": {
+      "label": "Rango de datas",
+      "placeholder": "Selecciona un rango de datas"
+    },
+    "language": {
+      "label": "Idioma:"
+    },
+    "zoom": {
+      "current": "Zoom Actual",
+      "resolution": "Resolución de Hexágonos"
+    }
+  },
+  "stats": {
+    "title": "Estatísticas de Incendios",
+    "date": "Data: {date}",
+    "fires": "Incendios {count}",
+    "totalArea": "Área Total: {area} ha",
+    "burnt": "queimada"
+  },
+  "legend": {
+    "title": "Lenda de Hexágonos",
+    "resolution": "Resolución",
+    "hexagonArea": "Área do Hexágono",
+    "lastCollection": "Última Recolección",
+    "currentSituation": "Situación Actual",
+    "noFire": "Sen Datos de Incendio",
+    "smallFire": "Incendio Pequeno",
+    "mediumFire": "Incendio Mediano",
+    "largeFire": "Incendio Grande",
+    "dataSource": "Datos de Copernicus/EFFIS/Unión Europea",
+    "madeIn": "Mapa construído en Madrid"
+  },
+      "popup": {
+      "area": "Área: {area} ha",
+      "date": "Data: {date}",
+      "totalArea": "Área Total: {area} ha",
+      "fireCount": "Número de Lumes: {count}",
+      "fires": "Lumes"
+    },
+  "datePicker": {
+    "placeholder": "Selecciona unha data",
+    "rangePlaceholder": "Selecciona un rango de datas",
+    "predefinedRanges": "Selección Rápida",
+    "ranges": {
+      "today": "Hoxe",
+      "yesterday": "Onte",
+      "lastWeek": "Última Semana",
+      "lastMonth": "Último Mes",
+      "lastQuarter": "Último Trimestre"
+    },
+    "reset": "Restablecer"
+  },
+  "languages": {
+    "ca": "Catalán",
+    "en": "Inglés",
+    "es": "Español",
+    "eu": "Euskera",
+    "gl": "Galego",
+    "pt": "Portugués"
+  }
+}

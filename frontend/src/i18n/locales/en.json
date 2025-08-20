@@ -1,0 +1,91 @@
+{
+  "app": {
+    "title": "Spain Forest Fires",
+    "mapTitle": "Fires in Iberian Peninsula",
+    "loading": "Loading fire data...",
+    "error": {
+      "title": "Error Loading Data",
+      "retry": "Retry"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Select Date:",
+      "placeholder": "Select a date"
+    },
+    "dateRange": {
+      "label": "Date Range",
+      "placeholder": "Select a date range"
+    },
+    "language": {
+      "label": "Language:"
+    },
+    "zoom": {
+      "current": "Current Zoom",
+      "resolution": "Hexagon Resolution"
+    }
+  },
+  "datePicker": {
+    "placeholder": "Select a date",
+    "rangePlaceholder": "Select a date range",
+    "predefinedRanges": "Quick Select",
+    "ranges": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "lastWeek": "Last Week",
+      "lastMonth": "Last Month",
+      "lastQuarter": "Last Quarter"
+    },
+    "reset": "Reset",
+    "selectingStart": "Selecting start date...",
+    "selectingEnd": "Selecting end date...",
+    "start": "Start",
+    "end": "End"
+  },
+  "fireMode": {
+    "current": "Current Situation",
+    "cumulated": "Cumulated Situation"
+  },
+  "stats": {
+    "title": "Fire Statistics",
+    "date": "Date: {date}",
+    "fires": "Fires {count}",
+    "totalArea": "Total Area: {area} ha",
+    "burnt": "burnt"
+  },
+  "legend": {
+    "title": "Hexagon Legend",
+    "resolution": "Resolution",
+    "hexagonArea": "Hexagon Area",
+    "lastCollection": "Last Collection",
+    "currentSituation": "Current Situation",
+    "noFire": "No Fire Data",
+    "smallFire": "Small Fire",
+    "mediumFire": "Medium Fire",
+    "largeFire": "Large Fire",
+    "dataSource": "Data from Copernicus/EFFIS/European Union",
+    "madeIn": "Map built in Madrid",
+    "showLegend": "See the legend",
+    "hideLegend": "Hide the legend"
+  },
+      "popup": {
+      "area": "Area: {area} ha",
+      "date": "Date: {date}",
+      "totalArea": "Total Area: {area} ha",
+      "fireCount": "Fire Count: {count}",
+      "fires": "Fires"
+    },
+  "languages": {
+    "ca": "Català",
+    "en": "English",
+    "es": "Español",
+    "eu": "Euskara",
+    "gl": "Galego",
+    "pt": "Português"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "auto": "Auto"
+  }
+}

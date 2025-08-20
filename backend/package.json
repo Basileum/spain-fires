@@ -1,0 +1,33 @@
+{
+  "name": "spain-forest-fires-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Spain forest fires data",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "collect-data": "tsx scripts/collect-data.ts",
+    "collect-remaining": "tsx scripts/collect-remaining-data.ts",
+    "test-storage": "tsx scripts/test-storage.ts",
+    "pregenerate-hexagons": "tsx scripts/pregenerate-hexagons.ts",
+    "pregenerate-spain": "tsx scripts/pregenerate-spain-overview.ts",
+    "data-collector": "tsx src/services/standaloneDataCollector.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "h3-js": "^4.2.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.8.0",
+    "tsx": "^4.1.1",
+    "typescript": "^5.2.2"
+  }
+}

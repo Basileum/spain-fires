@@ -1,0 +1,87 @@
+{
+  "app": {
+    "title": "Incendios Forestales de España",
+    "mapTitle": "Incendios en la Península Ibérica",
+    "loading": "Cargando datos de incendios...",
+    "error": {
+      "title": "Error al Cargar Datos",
+      "retry": "Reintentar"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Seleccionar Fecha:",
+      "placeholder": "Selecciona una fecha"
+    },
+    "dateRange": {
+      "label": "Rango de fechas",
+      "placeholder": "Selecciona un rango de fechas"
+    },
+    "language": {
+      "label": "Idioma:"
+    },
+    "zoom": {
+      "current": "Zoom Actual",
+      "resolution": "Resolución de Hexágonos"
+    }
+  },
+  "stats": {
+    "title": "Estadísticas de Incendios",
+    "date": "Fecha: {date}",
+    "fires": "Incendios {count}",
+    "totalArea": "Área Total: {area} ha",
+    "burnt": "quemada"
+  },
+  "legend": {
+    "title": "Leyenda de Hexágonos",
+    "resolution": "Resolución",
+    "hexagonArea": "Área del Hexágono",
+    "lastCollection": "Última Recolección",
+    "currentSituation": "Situación Actual",
+    "noFire": "Sin Datos de Incendio",
+    "smallFire": "Incendio Pequeño",
+    "mediumFire": "Incendio Mediano",
+    "largeFire": "Incendio Grande",
+    "dataSource": "Datos de Copernicus/EFFIS/Unión Europea",
+    "madeIn": "Mapa construido en Madrid",
+    "showLegend": "Ver la leyenda",
+    "hideLegend": "Ocultar la leyenda"
+  },
+  "popup": {
+    "area": "Área: {area} ha",
+    "date": "Fecha: {date}",
+    "totalArea": "Área Total: {area} ha",
+    "fireCount": "Número de Incendios: {count}",
+    "fires": "Incendios"
+  },
+  "datePicker": {
+    "placeholder": "Selecciona una fecha",
+    "rangePlaceholder": "Selecciona un rango de fechas",
+    "predefinedRanges": "Selección Rápida",
+    "ranges": {
+      "today": "Hoy",
+      "yesterday": "Ayer",
+      "lastWeek": "Última Semana",
+      "lastMonth": "Último Mes",
+      "lastQuarter": "Último Trimestre"
+    },
+    "reset": "Restablecer"
+  },
+  "fireMode": {
+    "current": "Situación Actual",
+    "cumulated": "Situación Acumulada"
+  },
+  "languages": {
+    "ca": "Català",
+    "en": "English",
+    "es": "Español",
+    "eu": "Euskara",
+    "gl": "Galego",
+    "pt": "Português"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "auto": "Automático"
+  }
+}

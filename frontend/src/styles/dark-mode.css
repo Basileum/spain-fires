@@ -1,0 +1,146 @@
+/* Dark mode CSS variables and styles */
+
+:root {
+  /* Light theme variables */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #e9ecef;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-primary: #dee2e6;
+  --border-secondary: #e9ecef;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.2);
+  
+  /* Component specific variables */
+  --legend-bg: #ffffff;
+  --legend-border: #e9ecef;
+  --legend-text: #212529;
+  --legend-text-secondary: #6c757d;
+  
+  --toggle-bg: #ffffff;
+  --toggle-border: #e9ecef;
+  --toggle-hover-bg: #f8f9fa;
+  --toggle-hover-border: #dee2e6;
+  --toggle-text: #212529;
+  --toggle-arrow: #6c757d;
+  
+  --dropdown-bg: #ffffff;
+  --dropdown-border: #e9ecef;
+  --dropdown-hover-bg: #f8f9fa;
+  --dropdown-active-bg: #e9ecef;
+  --dropdown-active-text: #495057;
+  
+  --loading-bg: rgba(255, 255, 255, 0.9);
+  --error-bg: rgba(255, 255, 255, 0.95);
+  --error-border: #dc3545;
+  
+  --fire-mode-bg: #ffffff;
+  --fire-mode-border: #dee2e6;
+  --fire-mode-active-bg: #007bff;
+  --fire-mode-active-text: #ffffff;
+  --fire-mode-inactive-bg: #f8f9fa;
+  --fire-mode-inactive-text: #6c757d;
+  
+  /* Legend colors for light mode */
+  --legend-no-fire-color: #f8f9fa;
+  --legend-small-fire-color: #ff6b6b;
+  --legend-medium-fire-color: #ff8e53;
+  --legend-large-fire-color: #ff4757;
+}
+
+.dark {
+  /* Dark theme variables */
+  --bg-primary: #1a202c;
+  --bg-secondary: #2d3748;
+  --bg-tertiary: #4a5568;
+  --text-primary: #e2e8f0;
+  --text-secondary: #a0aec0;
+  --border-primary: #4a5568;
+  --border-secondary: #2d3748;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.4);
+  
+  /* Component specific variables */
+  --legend-bg: #2d3748;
+  --legend-border: #4a5568;
+  --legend-text: #e2e8f0;
+  --legend-text-secondary: #a0aec0;
+  
+  --toggle-bg: #2d3748;
+  --toggle-border: #4a5568;
+  --toggle-hover-bg: #4a5568;
+  --toggle-hover-border: #718096;
+  --toggle-text: #e2e8f0;
+  --toggle-arrow: #a0aec0;
+  
+  --dropdown-bg: #2d3748;
+  --dropdown-border: #4a5568;
+  --dropdown-hover-bg: #4a5568;
+  --dropdown-active-bg: #4a5568;
+  --dropdown-active-text: #e2e8f0;
+  
+  --loading-bg: rgba(26, 32, 44, 0.9);
+  --error-bg: rgba(26, 32, 44, 0.95);
+  --error-border: #f56565;
+  
+  --fire-mode-bg: #2d3748;
+  --fire-mode-border: #4a5568;
+  --fire-mode-active-bg: #3182ce;
+  --fire-mode-active-text: #ffffff;
+  --fire-mode-inactive-bg: #4a5568;
+  --fire-mode-inactive-text: #a0aec0;
+  
+  /* Legend colors for dark mode */
+  --legend-no-fire-color: #2d3748;
+  --legend-small-fire-color: #ff6b6b;
+  --legend-medium-fire-color: #ff8e53;
+  --legend-large-fire-color: #ff4757;
+}
+
+/* Global dark mode styles */
+.dark body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dark .fire-map-container {
+  background-color: var(--bg-primary);
+}
+
+/* MapLibre GL dark mode adjustments */
+.dark .maplibregl-canvas {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+/* Ensure map controls are visible in dark mode */
+.dark .maplibregl-ctrl-group {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-primary);
+}
+
+.dark .maplibregl-ctrl-group button {
+  color: var(--text-primary);
+}
+
+.dark .maplibregl-ctrl-group button:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.dark .maplibregl-popup-content {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-primary);
+}
+
+.dark .maplibregl-popup-tip {
+  border-top-color: var(--bg-secondary);
+}
+
+.dark .maplibregl-popup-close-button {
+  color: var(--text-primary);
+}
+
+.dark .maplibregl-popup-close-button:hover {
+  background-color: var(--bg-tertiary);
+}

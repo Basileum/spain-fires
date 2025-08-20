@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "Incêndios Florestais de Espanha",
+    "mapTitle": "Incêndios na Península Ibérica",
+    "loading": "Carregando dados de incêndios...",
+    "error": {
+      "title": "Erro ao Carregar Dados",
+      "retry": "Tentar Novamente"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Selecionar Data:",
+      "placeholder": "Seleciona uma data"
+    },
+    "dateRange": {
+      "label": "Intervalo de datas",
+      "placeholder": "Seleciona um intervalo de datas"
+    },
+    "language": {
+      "label": "Idioma:"
+    },
+    "zoom": {
+      "current": "Zoom Atual",
+      "resolution": "Resolução de Hexágonos"
+    }
+  },
+  "stats": {
+    "title": "Estatísticas de Incêndios",
+    "date": "Data: {date}",
+    "fires": "Incêndios {count}",
+    "totalArea": "Área Total: {area} ha",
+    "burnt": "queimada"
+  },
+  "legend": {
+    "title": "Legenda de Hexágonos",
+    "resolution": "Resolução",
+    "hexagonArea": "Área do Hexágono",
+    "lastCollection": "Última Recolha",
+    "currentSituation": "Situação Atual",
+    "noFire": "Sem Dados de Incêndio",
+    "smallFire": "Incêndio Pequeno",
+    "mediumFire": "Incêndio Médio",
+    "largeFire": "Incêndio Grande",
+    "dataSource": "Dados de Copernicus/EFFIS/União Europeia",
+    "madeIn": "Mapa construído em Madrid"
+  },
+  "popup": {
+    "area": "Área: {area} ha",
+    "date": "Data: {date}",
+    "totalArea": "Área Total: {area} ha",
+    "fireCount": "Número de Incêndios: {count}",
+    "fires": "Incêndios"
+  },
+  "languages": {
+    "ca": "Català",
+    "en": "English",
+    "es": "Español",
+    "eu": "Euskara",
+    "gl": "Galego",
+    "pt": "Português"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "auto": "Automático"
+  },
+  "datePicker": {
+    "placeholder": "Seleciona uma data",
+    "rangePlaceholder": "Seleciona um intervalo de datas",
+    "predefinedRanges": "Seleção Rápida",
+    "ranges": {
+      "today": "Hoje",
+      "yesterday": "Ontem",
+      "lastWeek": "Última Semana",
+      "lastMonth": "Último Mês",
+      "lastQuarter": "Último Trimestre"
+    },
+    "reset": "Restabelecer"
+  }
+}

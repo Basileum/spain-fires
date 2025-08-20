@@ -1,0 +1,76 @@
+{
+  "app": {
+    "title": "Incendis Forestals d'Espanya",
+    "mapTitle": "Incendis a la Península Ibèrica",
+    "loading": "Carregant dades d'incendis...",
+    "error": {
+      "title": "Error al Carregar Dades",
+      "retry": "Reintentar"
+    }
+  },
+  "controls": {
+    "date": {
+      "label": "Seleccionar Data:",
+      "placeholder": "Selecciona una data"
+    },
+    "dateRange": {
+      "label": "Rang de dates",
+      "placeholder": "Selecciona un rang de dates"
+    },
+    "language": {
+      "label": "Idioma:"
+    },
+    "zoom": {
+      "current": "Zoom Actual",
+      "resolution": "Resolució d'Hexàgons"
+    }
+  },
+  "stats": {
+    "title": "Estadístiques d'Incendis",
+    "date": "Data: {date}",
+    "fires": "Incendis {count}",
+    "totalArea": "Àrea Total: {area} ha",
+    "burnt": "cremada"
+  },
+  "legend": {
+    "title": "Llegenda d'Hexàgons",
+    "resolution": "Resolució",
+    "hexagonArea": "Àrea de l'Hexàgon",
+    "lastCollection": "Última Recol·lecció",
+    "currentSituation": "Situació Actual",
+    "noFire": "Sense Dades d'Incendi",
+    "smallFire": "Incendi Petit",
+    "mediumFire": "Incendi Mitjà",
+    "largeFire": "Incendi Gran",
+    "dataSource": "Dades de Copernicus/EFFIS/Unió Europea",
+    "madeIn": "Mapa construït a Madrid"
+  },
+      "popup": {
+      "area": "Àrea: {area} ha",
+      "date": "Data: {date}",
+      "totalArea": "Àrea Total: {area} ha",
+      "fireCount": "Nombre d'Incendis: {count}",
+      "fires": "Incendis"
+    },
+  "datePicker": {
+    "placeholder": "Selecciona una data",
+    "rangePlaceholder": "Selecciona un rang de dates",
+    "predefinedRanges": "Selecció Ràpida",
+    "ranges": {
+      "today": "Avui",
+      "yesterday": "Ahir",
+      "lastWeek": "Última Setmana",
+      "lastMonth": "Últim Mes",
+      "lastQuarter": "Últim Trimestre"
+    },
+    "reset": "Restablir"
+  },
+  "languages": {
+    "ca": "Català",
+    "en": "Anglès",
+    "es": "Espanyol",
+    "eu": "Euskera",
+    "gl": "Gallec",
+    "pt": "Portuguès"
+  }
+}

@@ -1,0 +1,26 @@
+[Unit]
+Description=Spain Forest Fires Data Collector
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/path/to/your/backend
+ExecStart=/usr/bin/npm run data-collector
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Environment variables
+Environment=NODE_ENV=production
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/path/to/your/backend/data
+
+[Install]
+WantedBy=multi-user.target
