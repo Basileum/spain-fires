@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "build:prod": "NODE_ENV=production vue-tsc && vite build",
+    "build:prod": "NODE_ENV=production vite build",
+    "type-check": "vue-tsc --noEmit",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },

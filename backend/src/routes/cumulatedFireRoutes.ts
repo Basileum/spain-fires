@@ -52,7 +52,7 @@ router.get('/', async (req, res) => {
     });
 
   } catch (error) {
-    logger.error('Error in cumulated fires endpoint:', error);
+    logger.error('Error in cumulated fires endpoint:', 'cumulated-fires', error instanceof Error ? error : new Error(String(error)));
     res.status(500).json({
       error: 'Internal server error',
       message: error instanceof Error ? error.message : 'Unknown error'
@@ -72,7 +72,7 @@ router.get('/cache/stats', (req, res) => {
       data: stats
     });
   } catch (error) {
-    logger.error('Error getting cache stats:', error);
+    logger.error('Error getting cache stats:', 'cache-stats', error instanceof Error ? error : new Error(String(error)));
     res.status(500).json({
       error: 'Internal server error'
     });
@@ -91,7 +91,7 @@ router.post('/cache/clear', (req, res) => {
       message: 'Cache cleared successfully'
     });
   } catch (error) {
-    logger.error('Error clearing cache:', error);
+    logger.error('Error clearing cache:', 'clear-cache', error instanceof Error ? error : new Error(String(error)));
     res.status(500).json({
       error: 'Internal server error'
     });

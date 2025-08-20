@@ -10,7 +10,7 @@ const DATA_DIR = path.join(__dirname, '../../data');
 const CURRENT_FILE = path.join(DATA_DIR, 'current_fires.json');
 
 class StandaloneDataCollector {
-  private isRunning = false;
+  private _isRunning = false;
   private intervalId: NodeJS.Timeout | null = null;
 
   constructor() {
@@ -25,17 +25,17 @@ class StandaloneDataCollector {
         logger.info(`📁 Created data directory: ${DATA_DIR}`);
       }
     } catch (error) {
-      logger.error('Error creating data directory', error as Error);
+      logger.error('Error creating data directory', 'init-directory', error instanceof Error ? error : new Error(String(error)));
     }
   }
 
   async start() {
-    if (this.isRunning) {
+    if (this._isRunning) {
       logger.info('Data collector is already running');
       return;
     }
 
-    this.isRunning = true;
+    this._isRunning = true;
     logger.info('🚀 Starting standalone data collector...');
 
     // Initial collection
@@ -54,7 +54,7 @@ class StandaloneDataCollector {
       clearInterval(this.intervalId);
       this.intervalId = null;
     }
-    this.isRunning = false;
+    this._isRunning = false;
     logger.info('🛑 Standalone data collector stopped');
   }
 
@@ -68,7 +68,7 @@ class StandaloneDataCollector {
       await this.saveCurrentData(data);
       logger.info(`✅ Current data updated: ${data.results?.length || 0} fires for ${today}`);
     } catch (error) {
-      logger.error('❌ Error collecting current data:', error as Error);
+      logger.error('❌ Error collecting current data:', 'collect-data', error instanceof Error ? error : new Error(String(error)));
       // Update timestamp even on error
       await this.saveCurrentData({ count: 0, results: [], next: null, previous: null });
     }
@@ -111,12 +111,12 @@ class StandaloneDataCollector {
       await fs.writeFile(CURRENT_FILE, jsonData);
       logger.info(`✅ Current data saved: ${data.results?.length || 0} fires`);
     } catch (error) {
-      logger.error('❌ Error saving current data:', error as Error);
+      logger.error('❌ Error saving current data:', 'save-data', error instanceof Error ? error : new Error(String(error)));
     }
   }
 
   isRunning(): boolean {
-    return this.isRunning;
+    return this._isRunning;
   }
 }
 

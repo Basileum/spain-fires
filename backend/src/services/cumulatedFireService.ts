@@ -87,7 +87,7 @@ export class CumulatedFireService {
       
       return result;
     } catch (error) {
-      logger.error('Error calculating cumulated fire data:', error);
+      logger.error('Error calculating cumulated fire data:', 'calculate-cumulated', error instanceof Error ? error : new Error(String(error)));
       throw error;
     }
   }
@@ -116,7 +116,7 @@ export class CumulatedFireService {
             logger.info(`Found ${dayData.length} fires for ${dateStr}`);
           }
         } catch (error) {
-          logger.warn(`No data found for ${dateStr}`, error);
+          logger.warn(`No data found for ${dateStr}`, 'no-data-found', { date: dateStr });
         }
         
         // Move to next day
@@ -126,7 +126,7 @@ export class CumulatedFireService {
       logger.info(`Total fires found in date range: ${allFires.length}`);
       return allFires;
     } catch (error) {
-      logger.error('Error fetching fires from local data:', error);
+      logger.error('Error fetching fires from local data:', 'fetch-local-data', error instanceof Error ? error : new Error(String(error)));
       throw error;
     }
   }
